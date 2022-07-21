@@ -34,9 +34,9 @@ const consolidatePath = require.resolve('@vue/consolidate/package.json', {
 const builds = {
   // Runtime only (CommonJS). Used by bundlers e.g. Webpack & Browserify
   'runtime-cjs-dev': {
-    entry: resolve('web/entry-runtime.ts'),
-    dest: resolve('dist/vue.runtime.common.dev.js'),
-    format: 'cjs',
+    entry: resolve('web/entry-runtime.ts'),// 入口文件地址
+    dest: resolve('dist/vue.runtime.common.dev.js'),// 构建后的JS文件地址
+    format: 'cjs',// 表示构建的格式，cjs表示构建文件遵循CommonJS规范，es表示构建出来的文件遵循ES Module规范，umd表示构建出来的文件遵循UMD规范
     env: 'development',
     banner
   },
